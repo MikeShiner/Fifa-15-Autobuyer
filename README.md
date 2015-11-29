@@ -16,7 +16,7 @@ To log in using this autobuyer, you need to have 2-step verification activated o
 Improvements: Originally I intended to write a PHP script which automatically logs into your mail, searches for the Origin email and extracts the code. This will remove the reconnect limit of 6.
 
 #### Connection
-The autobuyer connects to EA's web app using Guzzle to send the HTTP requests. The requests are build with Fifa-request-forge designed by ebess. Login request contains the backup code, email address, password and secret answer (see php/ui.php).
+The autobuyer connects to EA's web app using Guzzle to send the HTTP requests. The requests are build with [Fifa-request-forge](https://github.com/ebess/Fifa-15-Ultimate-Team-WebApp-Api) designed by ebess. Login request contains the backup code, email address, password and secret answer (see php/ui.php).
 The cookie is then stored in a Cookie jar for future requests.
 
 #### Functions
