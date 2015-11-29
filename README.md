@@ -1,4 +1,4 @@
-# Fifa-15-Autobuyer
+ Fifa-15-Autobuyer
 Project designed to automate functions through EA's Fifa 15 Web App
 
 ###### Please Note: This project has been abandoned.
@@ -11,10 +11,17 @@ EA launched a web application to interact with the Ultimate Team marketplace acr
 ### How it works
 
 #### Login
-To log in using this autobuyer, you need to have 2-step verification activated on your Origin account. This means when you first log in, you then need to type in a code sent to your email address. To bypass this restriction, you need to use your Origin Backup Codes (Account Settings -> Privacy). There are 6 of them, just copy and past them into the field on the autobuyer and click connect.
+To log in using this autobuyer, you need to have 2-step verification activated on your Origin account. This means when you first log in, you then need to type in a code sent to your email address. To bypass this restriction, you need to use your Origin Backup Codes (Account Settings -> Privacy). There are 6 of them, just copy and paste them into the field on the autobuyer and click connect.
 
-Improvements: Originally I intended to write a PHP script which automatically logs into your mail, searches for the Origin email and extracts the code. This will extend the usages from 6 reconnects to infinity.
+Improvements: Originally I intended to write a PHP script which automatically logs into your mail, searches for the Origin email and extracts the code. This will remove the reconnect limit of 6.
 
 #### Connection
-The autobuyer connects to EA's web app using Guzzle to send the HTTP requests. The requests are build with with the email address, password and secret answer (editable in php/ui.php).
-T
+The autobuyer connects to EA's web app using Guzzle to send the HTTP requests. The requests are build with Fifa-request-forge designed by ebess. Login request contains the backup code, email address, password and secret answer (see php/ui.php).
+The cookie is then stored in a Cookie jar for future requests.
+
+#### Functions
+Basic functions can be found in /php/functions.php and include retrieving coins, searching for players, automatic bidding (with min and max bids), automatic buy (min & max BuyItNow). Also included in functions is TradePile and WishList management.
+
+### Contact
+Any questions feel free to contact me on mike.shiner@hotmail.com
+All code here is written by me and is free to use if you want to apply it to EA’s new Fifa 16 web app.
