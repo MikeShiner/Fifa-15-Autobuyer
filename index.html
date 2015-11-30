@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>FUT Miner V1.0</title>
+    <script src="js/jQuery.js"></script>
+    <script src="js/ui.js"></script>
+</head>
+<body>
+<div id="heading">Fut Miner v.1</div>
+</div>
+<div id="connectshow">
+    <span>Click to show connection Info and log.</span><span id="connectionStatus">
+    <img src="img/red_light.png" alt="Red Light" height="20" width="20"/> Not connected.</span></div>
+<div class="connectBox" id="connectBox">
+    <div id="connectItems" class="JSbox">
+        <button type="button" id="connectButton">Connect</button>
+        <div id="codesleft">Backup Codes Left: 0</div>
+        <div id="tokens">
+            <p>Nucleus ID:
+            <div id="nucID"></div>
+            </p>
+            <p>Session ID:
+            <div id="sessID"></div>
+            </p>
+            <p>Phishing Token:
+            <div id="phishTn"></div>
+            </p>
+        </div>
+    </div>
+    <div id="connectLog" class="connectionLog"><h2>Connection Log</h2></div>
+    <div class="clear"></div>
+</div>
+<div id="codeshow"><p>Click to add backup codes</p></div>
+<div id="backupcodes"><textarea id="codeField"></textarea>
+    <button id="submitcodes">Submit</button>
+    <p id="codeconfirm"></p></div>
+<div>You have: <img src="img/coin.png" alt="coinIcon" width="20" height="20"/>
+    <span id="coins">0</span> Coins <span id="updateCoins">Update</span></div>
+
+<div id="options">
+
+<h2>Recursive Player Search:</h2>
+Player ID:
+    <input id="searchId"/> Maximum Price:
+    <input id="maxprice" /><br/>
+    <input id="autoBin"/><label for="autoBin">Override: Buy it Now </label><br/>
+    <input id="autoStart"/><label for="autoStart">Override: Starting Bid </label><br/>
+<div id="searchCount"></div>
+<button type="button" id="buySellButton">Start Buy & Sell</button>
+    <button type="button" id="sellButton">Start Sell Only</button>
+<button type="button" id="stopRecr">Stop Recursion.</button>
+<div id="stage"></div>
+
+<h2>Trade Pile</h2>
+<button type="button" id="tradeButton">Get Trade Pile</button>
+<div id="tradeDiv"></div>
+
+<h2>Watchlist</h2>
+<button type="button" id="watchButton">Get Watchlist & Send to Pile</button>
+<div id="watchDiv"></div>
+
+<h2>Auction</h2>
+<input id="auctionInput"/>
+<button type="button" id="auctionButton">Auction A Player - auto: 2300/1900</button>
+<div id="auctionDiv"></div>
+
+<h2>Currently listed on market</h2>
+<button type="button" id="marketButton">Get players listed on market</button>
+<div id="marketDiv"></div>
+
+<h2>Autolist - Watchlist/Pile/Auction</h2>
+
+<button type="button" id="autoSell">Auto Sell.</button>
+</div><div id="monitor"><div id="service"></div></div><div class="clear"></div>
+</body>
+</html>

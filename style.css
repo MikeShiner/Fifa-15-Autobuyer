@@ -1,0 +1,98 @@
+.connectBox {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.JSbox {
+    margin-top: 10px;
+    float: right;
+    text-align: center;
+    width: 49%;
+}
+
+.connectionLog {
+    margin-top: 10px;
+    text-align: center;
+    outline: auto;
+    outline-color: darkred;
+    outline-width: 2px;
+    float: left;
+    width: 49%;
+    height: 300px;
+    overflow: auto;
+}
+
+#options {
+    width: 49%;
+    float: left;
+}
+
+#monitor {
+    padding-left: 20px;
+    width: 49%;
+    float: right;
+    color: dimgray;
+}
+
+#service {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 26px;
+    text-align: right;
+    padding-right: 200px;
+    height: 200px;
+}
+#itemsTitle {
+    padding-left: 20px;
+    float:left;
+}
+.clear {
+    clear: both;
+}
+
+.backupcodes {
+    outline: auto;
+    outline-width: 2px;
+}
+
+.connectshow {
+    height: 26px;
+    vertical-align: middle;
+}
+
+#heading {
+    font-size: 30px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding-bottom: 30px;
+}
+
+#connectionStatus {
+    padding-left: 250px;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#updateCoins {
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.connectionLog {
+    border-right: 2px;
+}
+
+#active {
+    font-size: 30px;
+    color: greenyellow;
+}
+#sold {
+    font-size: 30px;
+    color: lightskyblue;
+}
+#emptypile {
+    font-size: inherit;
+    color: lightslategrey;
+}
+.info {
+    font-size: 16px;
+    color: mediumpurple;
+}
